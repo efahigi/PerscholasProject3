@@ -12,9 +12,6 @@ const bookController = require('../../controllers/api/books');
 import * as bookValidation from './book.validation.js';
 
 
-
-
-
 router.post('/',userAuth,fileUpload('path'),validation(bookValidation.bookSchema),bookController.addBook)
 router.get('/',userAuth,bookController.getAllBooks)
 router.get('/books/:id',userAuth,bookController.getBookById)
