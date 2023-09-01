@@ -1,70 +1,26 @@
 // import mongoose from "mongoose";
-import mongoose from "mongoose";
-const bookSchema = mongoose.Schema({
-    name:
-    {
-        type:String ,
-        unique:true,
-        minLength:[3,"Name is too short"],
-        maxLength:[20 , "Name is too Long"],
-        required:true
-    },
+const mongoose = require('mongoose');
 
-    category:
-    {
-        type:String,
-        required:true,
-        minLength:[3,"Name is too short"],
-        maxLength:[20 , "Name is too Long"],
-    },
+const BookSchema = new mongoose.Schema({
+  title: {
+    type: String,
+    required: true
+  },
+  image: {
+    type: String,
+    required: true
+  },
+  author: {
+    type: String,
+    required: true
+  },
+  description: {
+    type: String
+  },
+  updated_date: {
+    type: Date,
+    default: Date.now
+  }
+});
 
-    publisher:
-    {
-        type:String,
-    },
-
-    bookPhoto:
-    {
-        type:String
-    },
-
-    isIssued:
-    {
-        type:Boolean,
-        default:false
-    },
-
-    issuedBookUser:
-    {
-        type:mongoose.Types.ObjectId,
-        ref:'user'
-    },
-
-    issueDate:
-    {
-        type:Date,
-    },
-
-    returnDate:
-    {
-        type:Date
-    },
-
-    late:
-    {
-        type: Number,
-        default: 0
-    },
-
-    fine:
-    {
-        type:Number,
-        default:0
-    }
-},
-  
-{timestamps:true })
-
-const bookModel = mongoose.model('Book', bookSchema);
-
-export default bookModel;
+module.exports = Book = mongoose.model('book', BookSchema);

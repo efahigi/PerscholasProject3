@@ -3,25 +3,31 @@ import { Routes, Route } from 'react-router-dom';
 import { getUser } from './utilities/users-service';
 // pages
 import AuthPage from './pages/AuthPage/AuthPage';
-import NewOrderPage from './pages/NewOrderPage/NewOrderPage';
-import OrderHistoryPage from './pages/OrderHistoryPage/OrderHistoryPage';
 // components
+import styles from './App.module.css';
+import CreateBook from './components/CreateBook/CreateBook';
+import ShowBookList from './components/ShowBookList/ShowBookList';
+import ShowBookDetails from './components/ShowBookDetails/ShowBookDetails';
+import UpdateBook from './components/UpdateBook/UpdateBook';
 import NavBar from './components/NavBar/NavBar';
 // css
-import './App.css';
+// import './App.css';
 
 function App() {
   // array destructuring
   const [user, setUser] = useState(getUser());
 
   return (
-    <main className='App'>
+    <main className={styles.App}>
       {user ? (
         <>
           <NavBar user={user} setUser={setUser} />
           <Routes>
-            <Route path='/orders/new' element={<NewOrderPage />} />
-            <Route path='/orders' element={<OrderHistoryPage />} />
+            <Route exact path='/' element={<ShowBookList user={user} setUser={setUser}/>} />
+            <Route path='/create-book' element={<CreateBook user={user} setUser={setUser}/>} />
+            <Route path='/edit-book/:id' element={<UpdateBook user={user} setUser={setUser}/>} />
+            <Route path='/show-book/:id' element={<ShowBookDetails user={user} setUser={setUser}/>} />
+            
           </Routes>
         </>
       ) : (
@@ -32,3 +38,4 @@ function App() {
 }
 
 export default App;
+
