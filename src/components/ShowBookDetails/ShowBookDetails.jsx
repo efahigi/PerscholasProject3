@@ -14,7 +14,7 @@ class showBookDetails extends Component {
   componentDidMount() {
     // console.log("Print id: " + this.props.match.params.id);
     axios
-      .get('http://localhost:8082/api/books/'+this.props.match.params.id)
+      .get('http://localhost:3001/api/books/'+this.props.match.params.id)
       .then(res => {
         // console.log("Print-showBookDetails-API-response: " + res.data);
         this.setState({
@@ -28,7 +28,7 @@ class showBookDetails extends Component {
 
   onDeleteClick (id) {
     axios
-      .delete('http://localhost:8082/api/books/'+id)
+      .delete('http://localhost:3001/api/books/'+id)
       .then(res => {
         this.props.history.push("/");
       })
@@ -64,8 +64,8 @@ class showBookDetails extends Component {
           </tr>
           <tr>
             <th scope="row">3</th>
-            <td>ISBN</td>
-            <td>{ book.isbn }</td>
+            <td>picture</td>
+            <td>{ book.image }</td>
           </tr>
           <tr>
             <th scope="row">4</th>
@@ -76,11 +76,6 @@ class showBookDetails extends Component {
             <th scope="row">5</th>
             <td>Published Date</td>
             <td>{ book.published_date }</td>
-          </tr>
-          <tr>
-            <th scope="row">6</th>
-            <td>Description</td>
-            <td>{ book.description }</td>
           </tr>
         </tbody>
       </table>

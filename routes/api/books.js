@@ -1,8 +1,9 @@
+//---Load express into my  application
 const express = require('express');
 const router = express.Router();
 
 // Load Book model
-const Book = require('../../models/book');
+const Book = require('../../models/Book');
 
 // @route GET api/books/test
 // @description tests books route
@@ -13,8 +14,9 @@ router.get('/test', (req, res) => res.send('book route testing!'));
 // @description Get all books
 // @access Public
 router.get('/', (req, res) => {
-  Book.find()
-    .then(books => res.json(books))
+  
+   Book.find()
+    .then(book => res.json(book))
     .catch(err => res.status(404).json({ nobooksfound: 'No Books found' }));
 });
 

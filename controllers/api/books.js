@@ -1,5 +1,5 @@
 // const Book = require('../../models/book');
-const book = require('../../models/book');
+const book = require('../../models/Book');
 
 module.exports = {
   index,
