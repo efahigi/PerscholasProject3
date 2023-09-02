@@ -10,14 +10,16 @@ export default function NavBar({ user, setUser }) {
 
   return (
     <nav>
-      <Link to='/books'>Add Book</Link>
+       <Link to="/bookCategories">Book Categories</Link>
       &nbsp; | &nbsp;
-      <Link to='/books/new'>Book List</Link>
-      &nbsp;&nbsp; <span>Welcome, {user.name}</span>
+      <Link to="/books"> Add Books</Link>
+      &nbsp; | &nbsp;
+      <Link to="/orders">Order History</Link>
+      &nbsp; | &nbsp;
+      <Link to="/orders/new">New Order</Link>
       &nbsp;&nbsp;
-      <Link to='' onClick={handleLogOut}>
-        Log Out
-      </Link>
+      <span>Welcome, {user.name}</span>
+      &nbsp;&nbsp;<Link to="" onClick={handleLogOut}>Log Out</Link>
     </nav>
   );
 }

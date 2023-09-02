@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { getUser } from './utilities/users-service';
+import { getUser } from '../../utilities/users-service';
 // pages
-import AuthPage from './pages/AuthPage/AuthPage';
+import AuthPage from '../AuthPage/AuthPage';
 // components
 import styles from './App.module.css';
 import NewOrderPage from '../NewOrderPage/NewOrderPage';
@@ -12,7 +12,7 @@ import BookCategoryPage from '../BookCategoryPage/BookCategoryPage';
 import BookPage from '../BookPage/BookPage';
 
 // css
-// import './App.css';
+import './App.module.css';
 
 function App() {
   // array destructuring

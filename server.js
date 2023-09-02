@@ -13,7 +13,7 @@ require('./config/database');
 const app = express();
 
 // Enable CORS for all routes
-//app.use(cors());
+// app.use(cors());
 
 // Connect to the database
 app.use(logger('dev'));

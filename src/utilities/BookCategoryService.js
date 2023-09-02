@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = '/api/bookcategory';
+const API_URL = 'http://localhost:3001/api/bookcategory';
 
 const getAuthorizationHeader = () => ({
   headers: { 'Authorization': `Bearer ${localStorage.getItem('token')}` }
