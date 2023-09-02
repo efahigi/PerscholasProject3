@@ -1,9 +1,9 @@
 //---Load express into my  application
 const express = require('express');
 const router = express.Router();
-
+// const Books = require('../../controllers/api/books');
 // Load Book model
-const Book = require('../../models/Book');
+const Book = require('../../models/book');
 
 // @route GET api/books/test
 // @description tests books route

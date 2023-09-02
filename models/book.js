@@ -1,15 +1,14 @@
 // import mongoose from "mongoose";
 const mongoose = require('mongoose');
-
 const BookSchema = new mongoose.Schema({
   title: {
     type: String,
     required: true
   },
-  image: {
-    type: String,
-    required: true
-  },
+  // img: {
+  //   type: String,
+  //   required: true
+  // },
   author: {
     type: String,
     required: true

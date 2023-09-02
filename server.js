@@ -11,7 +11,6 @@ require('./config/database');
 const app = express();
 
 
-
 // Connect to the database
 app.use(logger('dev'));
 app.use(express.json());//app.use(express.json({ extended: false }));

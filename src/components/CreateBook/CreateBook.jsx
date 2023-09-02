@@ -12,8 +12,8 @@ class CreateBook extends Component {
       // isbn:'',
       author:'',
       description:'',
-      published_date:'',
-      publisher:''
+      // published_date:'',
+      // publisher:''
     };
   }
 
