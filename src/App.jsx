@@ -5,11 +5,12 @@ import { getUser } from './utilities/users-service';
 import AuthPage from './pages/AuthPage/AuthPage';
 // components
 import styles from './App.module.css';
-import CreateBook from './components/CreateBook/CreateBook';
-import ShowBookList from './components/ShowBookList/ShowBookList';
-import ShowBookDetails from './components/ShowBookDetails/ShowBookDetails';
-import UpdateBook from './components/UpdateBook/UpdateBook';
-import NavBar from './components/NavBar/NavBar';
+import NewOrderPage from '../NewOrderPage/NewOrderPage';
+import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage';
+import NavBar from '../../components/NavBar/NavBar';
+import BookCategoryPage from '../BookCategoryPage/BookCategoryPage';
+import BookPage from '../BookPage/BookPage';
+
 // css
 // import './App.css';
 
@@ -23,10 +24,11 @@ function App() {
         <>
           <NavBar user={user} setUser={setUser} />
           <Routes>
-            <Route exact path='/' element={<ShowBookList user={user} setUser={setUser}/>} />
-            <Route path='/create-book' element={<CreateBook user={user} setUser={setUser}/>} />
-            <Route path='/edit-book/:id' element={<UpdateBook user={user} setUser={setUser}/>} />
-            <Route path='/show-book/:id' element={<ShowBookDetails user={user} setUser={setUser}/>} />
+            {/* Route components in here */}
+            <Route path="/bookCategories" element={<BookCategoryPage />} />
+              <Route path="/books" element={<BookPage />} />
+              <Route path="/orders/new" element={<NewOrderPage />} />
+              <Route path="/orders" element={<OrderHistoryPage />} />
             
           </Routes>
         </>
