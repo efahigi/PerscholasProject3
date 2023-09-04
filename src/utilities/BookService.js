@@ -21,3 +21,7 @@ export const updateBook = async (id, book) => {
 export const deleteBook = async (id) => {
   return await axios.delete(`${API_URL}/${id}`, getAuthorizationHeader());
 };
+
+export const fetchBookById = async (id) => {
+  return await axios.get(`${API_URL}/${id}`, getAuthorizationHeader());
+};
