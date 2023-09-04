@@ -30,7 +30,7 @@ const BookPage = () => {
 
   return (
     <div className="container gradientBg">
-      <h1 className="title">Add Book</h1>
+      <h3 className="title">Add Book</h3>
       {alert.type && (
         <div className={`alert alert-${alert.type}`} role="alert">
           {alert.message}
