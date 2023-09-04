@@ -3,7 +3,8 @@ const express = require('express');
 const path = require('path');
 const favicon = require('serve-favicon');
 const logger = require('morgan');
-// const cors = require('cors');
+const cors = require('cors');
+const fs = require('fs');
 
 // Always require and configure near the top
 require('dotenv').config();
@@ -13,7 +14,6 @@ require('./config/database');
 const app = express();
 
 // Enable CORS for all routes
-var cors = require('cors');
 app.use(cors());
 
 // Connect to the database
@@ -34,10 +34,18 @@ app.use(require('./config/checkToken'));
 app.use('/api/users', require('./routes/api/users'));
 app.use('/api/bookcategory', require('./routes/api/bookCategories'));
 app.use('/api/book', require('./routes/api/books'));
+
+// Create uploads directory if it doesn't exist
+const uploadsDir = path.join(__dirname, 'uploads');
+if (!fs.existsSync(uploadsDir)){
+    fs.mkdirSync(uploadsDir);
+}
+app.use('/uploads', express.static('uploads'));
 // Protect the API routes below from anonymous users
 const ensureLoggedIn = require('./config/ensureLoggedIn');
-
 app.use('/api/books', ensureLoggedIn, require('./routes/api/books'));
+
+
 // The following "catch all" route (note the *) is necessary
 // to return the index.html on all non-AJAX requests
 app.get('/*', function (req, res) {
