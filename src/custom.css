@@ -4,16 +4,19 @@
   }
 
 .title{
-    color:chocolate;
+    color:rgb(51, 50, 50);
     padding-top: 10px;
     padding-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   } 
   
 .gradientBg , body, html {
+  /* background-color: #282c34; */
     background: linear-gradient(to right, #f1eaca, #f7ea7e);
     min-height: 100vh;
     margin: 0;
     padding: 0;
+   
 }
 
 .card-image {

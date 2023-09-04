@@ -14,7 +14,7 @@ export default function NavBar({ user, setUser }) {
       <Link className="navbar-brand" to="/">
         <img src={logo} alt="logo" width="200" height="100" />
       </Link>
-      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">

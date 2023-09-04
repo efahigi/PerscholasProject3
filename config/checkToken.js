@@ -1,7 +1,6 @@
 // config/checkToken.js
 const jwt = require('jsonwebtoken');
 
-
 module.exports = function(req, res, next) {
   // Check for the token being sent in a header or as a query param
   let token = req.get('Authorization') || req.query.token;
