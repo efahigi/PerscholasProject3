@@ -1,3 +1,4 @@
+/* CSS Custom Properties */
 :root {
   --white: #FFFFFF;
   --tan-1: #FBF9F6;
@@ -24,9 +25,7 @@ body {
   padding: 2vmin;
   height: 100vh;
 }
-.App{
-  text-align: center;
-}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -152,3 +151,4 @@ button[type="submit"] {
   grid-column: span 2;
   margin: 1vmin 0 0;
 }
+

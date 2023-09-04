@@ -21,19 +21,17 @@ app.use(logger('dev'));
 app.use(express.json());//app.use(express.json({ extended: false }));
 // Configure both serve-favicon & static middleware
 // to serve from the production 'build' folder
-app.use(favicon(path.join(__dirname, 'build', 'favicon.ico')));
+// app.use(favicon(path.join(__dirname, 'build', 'favicon.ico')));
+// app.use(express.static(path.join(__dirname, 'build')));
 app.use(express.static(path.join(__dirname, 'build')));
-
 // Middleware to check and verify a JWT and
 // assign the user object from the JWT to req.user
 app.use(require('./config/checkToken'));
 
-
-
 // Put API routes here, before the "catch all" route
 app.use('/api/users', require('./routes/api/users'));
-app.use('/api/bookcategory', require('./routes/api/bookCategories'));
 app.use('/api/book', require('./routes/api/books'));
+app.use('/api/order', require('./routes/api/orders'));
 
 // Create uploads directory if it doesn't exist
 const uploadsDir = path.join(__dirname, 'uploads');
@@ -48,7 +46,7 @@ app.use('/api/books', ensureLoggedIn, require('./routes/api/books'));
 
 // The following "catch all" route (note the *) is necessary
 // to return the index.html on all non-AJAX requests
-app.get('/*', function (req, res) {
+app.get('/*', function(req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 // Configure to use port 3001 instead of 3000 during
