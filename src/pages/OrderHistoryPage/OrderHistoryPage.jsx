@@ -52,7 +52,7 @@ const OrderHistoryPage = () => {
 
   return (
     <div className="container gradientBg">
-      <h1 className="title">All Orders</h1>
+      <h3 className="title">All Orders</h3>
       <div className="row justify-content-center"> 
       <div className="col-md-12">
       <Table striped bordered hover>
