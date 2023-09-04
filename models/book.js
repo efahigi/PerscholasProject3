@@ -1,4 +1,3 @@
-// import mongoose from "mongoose";
 const mongoose = require('mongoose');
 
 const bookSchema = new mongoose.Schema({
@@ -7,16 +6,23 @@ const bookSchema = new mongoose.Schema({
     required: true,
     trim: true,
   },
+  author: {
+    type: String,
+    required: true,
+    trim: true,
+  },
+
   price: {
     type: Number,
     required: true,
     min: 0,
   },
-  category: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'BookCategory',
+ 
+  image: {
+    type: String,
     required: true,
-  }
+    trim: true,
+  },
 });
 
 const Book = mongoose.model('Book', bookSchema);
