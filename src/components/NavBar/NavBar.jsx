@@ -9,7 +9,7 @@ export default function NavBar({ user, setUser }) {
   }
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark ">
     <div className="container-fluid">
       <Link className="navbar-brand" to="/">
         <img src={logo} alt="logo" width="200" height="100" />
@@ -19,6 +19,9 @@ export default function NavBar({ user, setUser }) {
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
+        <li className="nav-item pad20">
+            <span className="navbar-text">Welcome, {user.name}</span>
+          </li>
           <li className="nav-item pad20">
             <Link className="nav-link" to="/books/add">Add Book</Link>
           </li>
@@ -26,13 +29,10 @@ export default function NavBar({ user, setUser }) {
             <Link className="nav-link" to="/books">View Books</Link>
           </li>
           <li className="nav-item pad20">
-            <Link className="nav-link" to="/orders">Order History</Link>
-          </li>
-          <li className="nav-item pad20">
             <Link className="nav-link" to="/orders/new">New Order</Link>
           </li>
           <li className="nav-item pad20">
-            <span className="navbar-text">Welcome, {user.name}</span>
+            <Link className="nav-link" to="/orders">Order History</Link>
           </li>
           <li className="nav-item pad20">
             <Link className="nav-link" to="" onClick={handleLogOut}>Log Out</Link>
