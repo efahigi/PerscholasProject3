@@ -53,7 +53,7 @@ const UpdateBookPage = () => {
   }
   return (
     <div className="container gradientBg">
-      <h1 className="title">Update Book</h1>
+      <h3 className="title">Update Book</h3>
       <div className="row justify-content-center"> 
       <div className="col-md-6">
       <Form className='bordered-form'>
