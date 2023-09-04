@@ -27,7 +27,7 @@ export default function LoginForm({ setUser }) {
 
   return (
     <div className="container gradientBg">
-      <h1 className="title">Log In</h1>
+      <h3 className="title">Log In</h3>
       {error && (
         <div className="alert alert-danger" role="alert">
           {error}
