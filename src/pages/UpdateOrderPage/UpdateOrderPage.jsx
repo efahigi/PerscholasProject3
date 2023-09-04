@@ -59,7 +59,7 @@ const UpdateOrderPage = () => {
 
   return (
     <div className="container gradientBg">
-      <h1 className="title">Update Order</h1>
+      <h3 className="title">Update Order</h3>
       {order && (
  <div className="row justify-content-center"> 
  <div className="col-md-6">
