@@ -42,7 +42,7 @@ const NewOrderPage = () => {
 
   return (
     <div className="container gradientBg">
-    <h1 className="title">Place an Order</h1>
+    <h3 className="title">Place your Order</h3>
     {alert.type && (
         <div className={`alert alert-${alert.type}`} role="alert">
           {alert.message}
