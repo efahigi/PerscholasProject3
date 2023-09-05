@@ -7,19 +7,23 @@
     color:rgb(51, 50, 50);
     padding-top: 10px;
     padding-bottom: 20px;
-
     font-family:  system-ui, apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Open Sans'
   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
   sans-serif;
   } 
-  
-.gradientBg , body, html {
+body, html {
   /* background-color: #282c34; */
     background: linear-gradient(to right, #f1eaca, #f7ea7e);
     min-height: 100vh;
     margin: 0;
     padding: 0;
-   
+}
+.gradientBg {
+  /* background-color: #282c34; */
+    background: linear-gradient(to right, #f1eaca, #f7ea7e);
+    min-height: 50vh;
+    margin: 0;
+    padding: 0;
 }
 
 .card-image {
@@ -27,14 +31,14 @@
     height: 200px;
     object-fit:contain;
   }
-
   .bordered-form {
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
-
 .pad20{
     padding-right: 80px;
   }
+
+ 

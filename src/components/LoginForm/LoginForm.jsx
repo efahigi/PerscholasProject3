@@ -56,8 +56,9 @@ export default function LoginForm({ setUser }) {
                 required 
               />
             </Form.Group>
+           
             <Button variant="warning" type="submit">
-              Log In
+             Log In
             </Button>
           </Form>
         </div>
