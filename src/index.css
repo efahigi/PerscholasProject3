@@ -97,26 +97,26 @@ code {
   color: var(--text-light);
 } */
 
-label {
+/* label {
   font-size: 2vmin;
   display: flex;
   align-items: center;
-}
+} */
 
 
-input {
+/* input {
   padding: 1vmin;
   font-size: 2vmin;
   border: .1vmin solid var(--tan-3);
   border-radius: .5vmin;
   color: var(--text-dark);
   background-image: none !important; /* prevent lastpass */
-  outline: none;
-}
+  /* outline: none;
+}  */
 
-input:focus {
+/* input:focus {
   border-color: var(--orange);
-}
+} */
 
 /* button, a.button {
   margin: 1vmin;
