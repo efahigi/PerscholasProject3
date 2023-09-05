@@ -9,7 +9,7 @@ export default function NavBar({ user, setUser }) {
   }
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark ">
+    <nav className="navbar navbar-expand-lg navbar-dark  bg-dark">
     <div className="container-fluid">
       <Link className="navbar-brand" to="/">
         <img src={logo} alt="logo" width="200" height="100" />

@@ -13,7 +13,7 @@ export default function AuthPage({ setUser }) {
     <Container className="gradientBg">
       <Row className="justify-content-center">
         <Col md={12}>
-        <img src={logo} alt="logo" width="100%" height="100" />
+        <img src={logo} alt="logo" width="100%" height="10%" />
           <h3 className="title">Book Store</h3>
           <Button variant="warning" onClick={() => setShowSignUp(!showSignUp)}>
             {showSignUp ? 'Log In' : 'Sign Up'}

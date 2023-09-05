@@ -1,5 +1,28 @@
 # Books store App
+<!-- Features -->
+<!-- User side application -->
+<!-- --------------------------------------------------------- -->
+<!-- A. ABOUT User -->
+<!-- Sign Up: Users can create an account. -->
 
+<!-- Login: Registered users can login. -->
+
+<!-- Email Verification: To check the correctness of their email. -->
+<!-- Update User: Users have the ability to update their profile information -->
+<!-- ------------------------------------------------------------------ -->
+<!-- B.ABOUT Book -->
+<!-- Search Book: Users can search for books based on various criteria, such as title, author, etc -->
+
+<!-- Get All Books: Users can view a list of all available books in the library. -->
+<!-- Book Details: A page to display book details. -->
+<!-- Users can also collect books to thier activeCart and then finaly order it -->
+ <!-- Users can also review their past book order history  -->
+
+<!-- ---------------------------------------------------------- -->
+<!-- Technologies i will Use
+Frontend: React.js, Bootstrap
+Backend: Node.js, Express
+Database: MongoDB -->
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
