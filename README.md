@@ -2,7 +2,8 @@
 ## Introduction 
 I built a Book store App that allows users to sell and buy books.This application allows client to sign up and logIn to accees CRUD and to order book.
 - Sign Up: Users can create an account
-[Sign Up](/assets/signUp.png)
+
+![Sign Up](signUp.png)
 - Login: Registered users can login.
 [Login](/assets/login.png)
 - Email Verification: To check the correctness of their email
