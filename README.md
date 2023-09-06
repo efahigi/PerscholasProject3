@@ -2,21 +2,21 @@
 ## Introduction 
 I built a Book store App that allows users to sell and buy books.This application allows client to sign up and logIn to accees CRUD and to order book.
 - Sign Up: Users can create an account
-![signup](SignUp.png)
+![signup](/readme-assets/SignUp.png)
 
 - Login: Registered users can login.
-![login](login.png)
+![login](/readme-assets/login.png)
 
  After the users logged in to thier acount the user directly goes to book add(create). The client can also add book, view all books and order book. 
  - Create Book
- ![create](./assets/creatImg.png)
+ ![create](/readme-assets/creatImg.png)
 
  - View Book
- ![View Book](./assets/viewIg.png)
+ ![View Book](/readme-assets/viewIg.png)
 
  The Users also can review their past book order history and change or delete thier order too. 
  - Order History
- ![Order History](./assets/orderHistory.png)
+ ![Order History](/readme-assets/orderHistory.png)
 
 ## Technologies Used
 - Database:MongoDB/Mongoose
