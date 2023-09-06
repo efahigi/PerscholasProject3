@@ -7,8 +7,15 @@ I built a Book store App that allows users to sell and buy books.This applicatio
 - Login: Registered users can login.
 ![login](login.png)
 
-- Email Verification: To check the correctness of their email
- After the users logged in to thier acount directly goes to book post. The client can also add book, view all books and order book. The Users also can review their past book order history and change or delete thier order too. 
+ After the users logged in to thier acount the user directly goes to book add(create). The client can also add book, view all books and order book. 
+ - Create Book
+ ![create](creatImg.png)
+
+ - View Book
+ ![Viewbook](viewIg.png)
+
+ The Users also can review their past book order history and change or delete thier order too. 
+ ![order History](orderHistory.png)
 
 ## Technologies Used
 - Database:MongoDB/Mongoose
