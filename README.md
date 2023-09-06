@@ -1,29 +1,26 @@
 # Book store App
-This Book store application allows clients to sign up and logIn. After the users logged in to thier acount the user can post, updat and Delete. Again the client can post,update and delete a book,  Beside, to CRUD the client can  also  order the bookissuing (borrowing) books for a specified duration. If a user fails to return a book within the designated time, a fee will be applied.
-Introduction 
-<!-- User side application -->
-<!-- --------------------------------------------------------- -->
-<!-- A. ABOUT User -->
-<!-- Sign Up: Users can create an account. -->
+## Introduction 
+I built a Book store App that allows users to sell and buy books.This application allows client to sign up and logIn to accees CRUD and to order book.
+-Sign Up: Users can create an account
+![Sign Up](assets/signUp.png)
+-Login: Registered users can login.
+![Login](assets/login.png)
+-Email Verification: To check the correctness of their email
+ After the users logged in to thier acount directly goes to book post. The client can also add book, view all books and order book. The Users also can review their past book order history and change or delete thier order too. 
 
-<!-- Login: Registered users can login. -->
+## Technologies Used
+-Database:MongoDB/Mongoose
+-Backend:Express
+-Frontend:React
+-Frontend:Bootstrap
+-Backend:Node
+## Getting Started
+[Trello board](https://private326622.monday.com/boards/5115436468)
+Deployed app
+## Unsolved Problems
+## Future Enhancements
 
-<!-- Email Verification: To check the correctness of their email. -->
-<!-- Update User: Users have the ability to update their profile information -->
-<!-- ------------------------------------------------------------------ -->
-<!-- B.ABOUT Book -->
-<!-- Search Book: Users can search for books based on various criteria, such as title, author, etc -->
 
-<!-- Get All Books: Users can view a list of all available books in the library. -->
-<!-- Book Details: A page to display book details. -->
-<!-- Users can also collect books to thier activeCart and then finaly order it -->
- <!-- Users can also review their past book order history  -->
-
-<!-- ---------------------------------------------------------- -->
-<!-- Technologies i will Use
-Frontend: React.js, Bootstrap
-Backend: Node.js, Express
-Database: MongoDB
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
