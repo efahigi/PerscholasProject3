@@ -1,5 +1,6 @@
-# Books store App
-<!-- Features -->
+# Book store App
+This Book store application allows clients to sign up and logIn. After the users logged in to thier acount the user can post, updat and Delete. Again the client can post,update and delete a book,  Beside, to CRUD the client can  also  order the bookissuing (borrowing) books for a specified duration. If a user fails to return a book within the designated time, a fee will be applied.
+Introduction 
 <!-- User side application -->
 <!-- --------------------------------------------------------- -->
 <!-- A. ABOUT User -->
@@ -22,7 +23,7 @@
 <!-- Technologies i will Use
 Frontend: React.js, Bootstrap
 Backend: Node.js, Express
-Database: MongoDB -->
+Database: MongoDB
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
