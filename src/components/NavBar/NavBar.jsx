@@ -9,10 +9,10 @@ export default function NavBar({ user, setUser }) {
   }
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark  bg-dark">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
     <div className="container-fluid">
       <Link className="navbar-brand" to="/">
-        <img src={logo} alt="logo" width="200" height="100" />
+        <img src={logo} alt="logo" width="150" height="100" />
       </Link>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span className="navbar-toggler-icon"></span>

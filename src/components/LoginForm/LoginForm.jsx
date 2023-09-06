@@ -34,7 +34,7 @@ export default function LoginForm({ setUser }) {
         </div>
       )}
       <div className="row justify-content-center">
-        
+      <div className="col-md-6">
           <Form className="bordered-form" onSubmit={handleSubmit}>
             <Form.Group className="mb-3 form-label" controlId="email">
               <Form.Label>Email</Form.Label>
@@ -56,12 +56,12 @@ export default function LoginForm({ setUser }) {
                 required 
               />
             </Form.Group>
-            <Button variant="warning" type="submit">
+            <Button variant="secondary" type="submit" >
              Log In
             </Button>
           </Form>
         </div>
-
+        </div>
     </div>
   );
 }

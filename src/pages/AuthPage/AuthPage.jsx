@@ -9,13 +9,12 @@ import logo from '../../assets/logo.png';
 export default function AuthPage({ setUser }) {
   const [showSignUp, setShowSignUp] = useState(false);
   return (
-    
+
     <Container className="gradientBg">
+    <img src={logo} alt="logo" width="100px" height="100px"  />
       <Row className="justify-content-center">
         <Col md={10}>
-        <img src={logo} alt="logo" width="100%" height="10%" />
           <h3 className="title">Book Store</h3>
-        
           <div className='bordered-form'>
             { showSignUp ? <SignUpForm setUser={setUser} /> : <LoginForm setUser={setUser} /> }
             <Button variant="warning" onClick={() => setShowSignUp(!showSignUp)}>
@@ -24,10 +23,6 @@ export default function AuthPage({ setUser }) {
           </div>
         </Col>
       </Row>
-    </Container>
+    </Container> 
   );
 }
-
-{/* <p>Don't have an account yet?</p> <span>   <Button variant="warning" type="submit">
-Log In
-</Button></span> */}

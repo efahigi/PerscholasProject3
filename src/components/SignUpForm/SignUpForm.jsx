@@ -58,10 +58,10 @@ export default class SignUpForm extends Component {
                 <Form.Control type="password" name="confirm" value={this.state.confirm} onChange={this.handleChange} required />
               </Form.Group>
             
-              <p>Don't have an account yet?</p> <span>
-              <Button variant="warning" type="submit" disabled={disable}>
+              <p>Don't have an account yet?</p> 
+              <Button variant="secondary" type="submit" disabled={disable}>
                 Sign Up
-              </Button></span>
+              </Button>
              
             </Form>
             
