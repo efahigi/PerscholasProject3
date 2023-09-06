@@ -41,6 +41,7 @@ export default function LoginForm({ setUser }) {
               <Form.Control 
                 type="text" 
                 name="email" 
+                placeholder="Email" 
                 value={credentials.email} 
                 onChange={handleChange} 
                 required 
@@ -51,6 +52,7 @@ export default function LoginForm({ setUser }) {
               <Form.Control 
                 type="password" 
                 name="password" 
+                placeholder="Password" 
                 value={credentials.password} 
                 onChange={handleChange} 
                 required 

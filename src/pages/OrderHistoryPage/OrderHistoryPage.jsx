@@ -75,9 +75,10 @@ const OrderHistoryPage = () => {
               <td>{new Date(order.datePlaced).toLocaleString()}</td>
               <td>{order.status}</td>
               <td>
-                <Button variant="warning" onClick={() => goToUpdatePage(order._id)}>
+                <Button variant="info" onClick={() => goToUpdatePage(order._id)}>
                   Update
                 </Button>{' '}
+                &nbsp;&nbsp;
                 <Button variant="danger" onClick={() => handleDelete(order._id)}>
                   Delete
                 </Button>

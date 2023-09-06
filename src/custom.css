@@ -14,14 +14,14 @@
 body, html {
   /* background-color: #282c34; */
     background: linear-gradient(to right, #f1eaca, #f7ea7e);
-    min-height: 100vh;
+    min-height: 120vh;
     margin: 0;
     padding: 0;
 }
 .gradientBg {
   /* background-color: #282c34; */
     background: linear-gradient(to right, #f1eaca, #f7ea7e);
-    min-height: 60vh;
+    min-height: 65vh;
     margin: 0;
     padding: 0;
 }

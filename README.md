@@ -1,20 +1,21 @@
-# Book store App
-## Introduction 
-I built a Book store App that allows users to sell and buy books.This application allows client to sign up and logIn to accees CRUD and to order book.
-- Sign Up: Users can create an account
+# Book Store App
+
+## Introduction
+I built a Book store App that allows users to sell and buy books. This application allows client to sign up and login to access CRUD and to order book.
+- Sign Up: Users can create an account to access book store.
 ![signup](/readme-assets/SignUp.png)
 
-- Login: Registered users can login.
+- Login: Registered users can login and access everything.
 ![login](/readme-assets/login.png)
 
- After the users logged in to thier acount the user directly goes to book add(create). The client can also add book, view all books and order book. 
+ After login in to their account the user directly goes to book add(create) view. Than user can add book, view books and order it. 
  - Create Book
  ![create](/readme-assets/creatImg.png)
 
  - View Book
  ![View Book](/readme-assets/viewIg.png)
 
- The Users also can review their past book order history and change or delete thier order too. 
+ The Users also can review their past order and update or delete their past order. 
  - Order History
  ![Order History](/readme-assets/orderHistory.png)
 
@@ -29,8 +30,21 @@ I built a Book store App that allows users to sell and buy books.This applicatio
 - Deployed app
 ## Unsolved Problems
 ## Future Enhancements
+- Use state to track more detailed forecasts metrics such as precipitation and wind speed
+- Try to auto-detect the user's current location. -->
+
+<!-- ## Component Hierachy
+![React Component Heirachy](/readme-assets/React%20Component%20Heirachy.png)
 
 
+## MVP
+Our weather app had the following requirments to be considered complete
+- Fully functional react components listed above in the description
+- Responsive design (Mobile, Tablet and Desktop view)
+- Two pages ( Main and Alert)
+- Complete styling
+  - Make the app look like a complete website with a nav bar, main section and footer.
+## Future Work
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

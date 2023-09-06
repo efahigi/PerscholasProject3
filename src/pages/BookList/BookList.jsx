@@ -52,7 +52,7 @@ const BookList = () => {
               <p className="card-text">By <strong>{book.author}</strong></p>
               <p className="card-text">${book.price}</p>
               
-              <button className="btn btn-warning" onClick={() => goToUpdatePage(book)}>Update</button>
+              <button className="btn btn-info mr-4" onClick={() => goToUpdatePage(book)}>Update</button>  &nbsp;&nbsp;
               <button className="btn btn-danger ml-2" onClick={() => deleteBook(book._id)}>Delete</button>
             </div>
           </div>

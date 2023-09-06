@@ -40,22 +40,22 @@ export default class SignUpForm extends Component {
             <Form className='bordered-form' autoComplete="off" onSubmit={this.handleSubmit}>
               <Form.Group className="mb-3 form-label" controlId="name">
                 <Form.Label>Name</Form.Label>
-                <Form.Control type="text" name="name" value={this.state.name} onChange={this.handleChange} required />
+                <Form.Control type="text" placeholder="Name" name="name" value={this.state.name} onChange={this.handleChange} required />
               </Form.Group>
 
               <Form.Group className="mb-3 form-label" controlId="email">
                 <Form.Label>Email</Form.Label>
-                <Form.Control type="email" name="email" value={this.state.email} onChange={this.handleChange} required />
+                <Form.Control type="email" placeholder="Email" name="email" value={this.state.email} onChange={this.handleChange} required />
               </Form.Group>
 
               <Form.Group className="mb-3 form-label" controlId="password">
                 <Form.Label>Password</Form.Label>
-                <Form.Control type="password" name="password" value={this.state.password} onChange={this.handleChange} required />
+                <Form.Control type="password" placeholder="Password" name="password" value={this.state.password} onChange={this.handleChange} required />
               </Form.Group>
 
               <Form.Group className="mb-3 form-label" controlId="confirm">
                 <Form.Label>Confirm</Form.Label>
-                <Form.Control type="password" name="confirm" value={this.state.confirm} onChange={this.handleChange} required />
+                <Form.Control type="password" placeholder="Password" name="confirm" value={this.state.confirm} onChange={this.handleChange} required />
               </Form.Group>
             
               <p>Don't have an account yet?</p> 
