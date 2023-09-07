@@ -8,7 +8,7 @@ import Col from 'react-bootstrap/Col';
 import logo from '../../assets/logo.png';
 export default function AuthPage({ setUser }) {
   const [showSignUp, setShowSignUp] = useState(false);
-  // return
+  
   return (
     <Container className="gradientBg">
     <img src={logo} alt="logo" width="100px" height="100px"  />
