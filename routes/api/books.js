@@ -10,5 +10,5 @@ router.post('/', isLoggedIn, bookController.upload.single('image'), bookControll
 //router.post('/', isLoggedIn, bookController.createBook);
 router.put('/:id', isLoggedIn, bookController.upload.single('image'),bookController.updateBook);
 router.delete('/:id', isLoggedIn, bookController.deleteBook);
-
+//best
 module.exports = router;

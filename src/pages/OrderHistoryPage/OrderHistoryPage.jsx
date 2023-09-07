@@ -49,7 +49,7 @@ const OrderHistoryPage = () => {
     const result = await OrderService.deleteOrder(orderId);
     setOrders(orders.filter(o => o._id !== orderId));
   };
-
+//return Table
   return (
     <div className="container gradientBg">
       <h3 className="title">All Orders</h3>

@@ -57,7 +57,6 @@ const NewOrderPage = () => {
           <Dropdown.Toggle variant="default" id="dropdown-basic">
             {selectedBookTitle} {/* Display the selected book title */}
           </Dropdown.Toggle>
-
           <Dropdown.Menu>
             {books.map(book => (
               <Dropdown.Item key={book._id} eventKey={book._id}>
@@ -67,7 +66,6 @@ const NewOrderPage = () => {
           </Dropdown.Menu>
         </Dropdown>
       </Form.Group>
-
       <Form.Group className="mb-3 form-label" controlId="quantity">
         <Form.Label>Quantity</Form.Label>
         <Form.Control 
@@ -76,7 +74,7 @@ const NewOrderPage = () => {
           onChange={(e) => setNewOrder({...newOrder, quantity: e.target.value})}
         />
       </Form.Group>
-
+{/* button */}
       <Button variant="warning" type="button" onClick={addOrder}>
         Place Order
       </Button>

@@ -28,7 +28,6 @@ const BookList = () => {
           setEditedBookFields(bookToEdit);
           return;
         }
-        
         const updatedBook = await BookService.updateBook(id, editedBookFields);
         setBooks(books.map(book => (book._id === id ? updatedBook : book)));
         setEditedBookFields({});
@@ -51,7 +50,7 @@ const BookList = () => {
               <h5 className="card-title">{book.title} </h5>
               <p className="card-text">By <strong>{book.author}</strong></p>
               <p className="card-text">${book.price}</p>
-              
+              {/* Update button */}
               <button className="btn btn-info mr-4" onClick={() => goToUpdatePage(book)}>Update</button>  &nbsp;&nbsp;
               <button className="btn btn-danger ml-2" onClick={() => deleteBook(book._id)}>Delete</button>
             </div>

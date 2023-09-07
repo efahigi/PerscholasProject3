@@ -20,8 +20,6 @@ app.use(cors());
 app.use(logger('dev'));
 app.use(express.json());//app.use(express.json({ extended: false }));
 
-// to serve from the production 'build' folder
-// app.use(favicon(path.join(__dirname, 'build', 'favicon.ico')));
 // app.use(express.static(path.join(__dirname, 'build')));
 app.use(express.static(path.join(__dirname, 'build')));
 // Middleware to check and verify a JWT and

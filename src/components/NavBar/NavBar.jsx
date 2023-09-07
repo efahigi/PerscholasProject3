@@ -7,7 +7,7 @@ export default function NavBar({ user, setUser }) {
     userService.logOut();
     setUser(null);
   }
-
+//return
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
     <div className="container-fluid">
