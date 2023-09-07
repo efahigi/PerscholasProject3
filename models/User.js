@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 const bcrypt = require('bcrypt');
 
-const SALT_ROUNDS = 6;
+const SALT_ROUNDS = 6;// 6 is a reasonable value
 
 const userSchema = new Schema({
   name: {type: String, required: true},
@@ -37,4 +37,3 @@ userSchema.pre('save', async function(next) {
 });
 
 module.exports = mongoose.model('User', userSchema);
-//ok
