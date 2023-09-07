@@ -27,7 +27,7 @@ I built a Book store App that allows users to sell and buy books. This applicati
 ## Getting Started
 - [Trello board](https://private326622.monday.com/boards/5115436468)
 
-![Trello board screensget](<Screenshot 2023-09-06 124720.png>)
+![Trello board screensget](/readme-assets/trello.png>)
 - Deployed app
 ## Unsolved Problems
 ## Future Enhancements
