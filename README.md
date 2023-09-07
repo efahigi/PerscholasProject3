@@ -1,5 +1,4 @@
 # Book Store App
-
 ## Introduction
 I built a Book store App that allows users to sell and buy books. This application allows client to sign up and login to access CRUD and to order book.
 - Sign Up: Users can create an account to access book store.
@@ -15,7 +14,7 @@ I built a Book store App that allows users to sell and buy books. This applicati
  - View Book
  ![View Book](/readme-assets/viewIg.png)
 
- The Users also can review their past order and update or delete their past order. 
+ The Users also can review their order and update or delete their past order. 
  - Order History
  ![Order History](/readme-assets/orderHistory.png)
 
@@ -26,7 +25,9 @@ I built a Book store App that allows users to sell and buy books. This applicati
 - Frontend:Bootstrap
 - Backend:Node
 ## Getting Started
-- [Trello board](https://private326622.monday.com/boards/5115436468)
+- [Trello board](/readme-assets/https://private326622.monday.com/boards/5115436468)
+
+![Trello board screensget](<Screenshot 2023-09-06 124720.png>)
 - Deployed app
 ## Unsolved Problems
 ## Future Enhancements
