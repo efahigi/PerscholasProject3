@@ -32,6 +32,9 @@ I built a Book store App that allows users to sell and buy books. This applicati
 ##  Hierarchy
 ![mvc](/readme-assets/appMVC.png)
 ## Unsolved Problems
-- Deployment issue
+- Deployment issue. It is not deployed yet.
 ## Future Enhancements
-- I will add more feature like issuing(borrowing) book for the user.  
+I will add more feature like 
+- issuing(borrowing) book for the user.  
+- comments 
+- like/dislike

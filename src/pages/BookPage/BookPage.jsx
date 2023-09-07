@@ -27,7 +27,7 @@ const BookPage = () => {
     setAlert({ type: 'danger', message: error.message || 'Failed to add book.' });
   }
   };
-//return
+
   return (
     <div className="container gradientBg">
       <h3 className="title">Add Book</h3>
@@ -37,33 +37,31 @@ const BookPage = () => {
         </div>
       )}
       <div className="row justify-content-center"> 
-      <div className="col-md-6">
-      <Form className='bordered-form'>
-        <Form.Group className="mb-3 form-label" controlId="title">
-          <Form.Label >Title</Form.Label>
-          <Form.Control type="text" placeholder="Book Title" onChange={(e) => setNewBook({ ...newBook, title: e.target.value })} />
-        </Form.Group>
-        <Form.Group className="mb-3 form-label " controlId="author">
-          <Form.Label >Author</Form.Label>
-          <Form.Control type="text" placeholder="Book Author" onChange={(e) => setNewBook({ ...newBook, author: e.target.value })} />
-        </Form.Group>
-        <Form.Group className="mb-3 form-label " controlId="price">
-          <Form.Label >Price</Form.Label>
-          <Form.Control type="number" placeholder="Price" onChange={(e) => setNewBook({ ...newBook, price: e.target.value })} />
-        </Form.Group>
-        <Form.Group className="mb-3 form-label " controlId="image">
-          <Form.Label >Image</Form.Label>
-          <Form.Control type="file" onChange={(e) => setNewBookImage(e.target.files[0])} />
-        </Form.Group>
-        <Button variant="warning" type="button" onClick={addBook}>
-          Add Book
-        </Button>
-      </Form>
-      </div>
-    </div>     
+        <div className="col-md-6">
+          <Form className='bordered-form'>
+            <Form.Group className="mb-3 form-label" controlId="title">
+              <Form.Label >Title</Form.Label>
+              <Form.Control type="text" placeholder="Book Title" onChange={(e) => setNewBook({ ...newBook, title: e.target.value })} />
+            </Form.Group>
+            <Form.Group className="mb-3 form-label " controlId="author">
+              <Form.Label >Author</Form.Label>
+              <Form.Control type="text" placeholder="Book Author" onChange={(e) => setNewBook({ ...newBook, author: e.target.value })} />
+            </Form.Group>
+            <Form.Group className="mb-3 form-label " controlId="price">
+              <Form.Label >Price</Form.Label>
+              <Form.Control type="number" placeholder="Price" onChange={(e) => setNewBook({ ...newBook, price: e.target.value })} />
+            </Form.Group>
+            <Form.Group className="mb-3 form-label " controlId="image">
+              <Form.Label >Image</Form.Label>
+              <Form.Control type="file" onChange={(e) => setNewBookImage(e.target.files[0])} />
+            </Form.Group>
+            <Button variant="warning" type="button" onClick={addBook}>
+              Add Book
+            </Button>
+          </Form>
+        </div>
+      </div>     
     </div>
   );
-
 };
-
 export default BookPage;
