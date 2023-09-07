@@ -29,8 +29,6 @@ I built a Book store App that allows users to sell and buy books. This applicati
 
 ![Trello board screensget](/readme-assets/trello.png)
 - Deployed app : For now it is not deployed yet.
-##  Hierarchy
-![mvc](/readme-assets/appMVC.png)
 ## Unsolved Problems
 - Deployment issue. It is not deployed yet.
 ## Future Enhancements
@@ -38,3 +36,5 @@ I will add more feature like
 - issuing(borrowing) book for the user.  
 - comments 
 - like/dislike
+##  Hierarchy
+![mvc](/readme-assets/appMVC.png)
