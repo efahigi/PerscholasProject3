@@ -28,10 +28,10 @@ I built a Book store App that allows users to sell and buy books. This applicati
 - [Trello board](https://private326622.monday.com/boards/5115436468)
 
 ![Trello board screensget](/readme-assets/trello.png)
-- Deployed app
+- Deployed app : For now it is not deployed yet.
 ##  Hierarchy
 ![mvc](/readme-assets/appMVC.png)
 ## Unsolved Problems
-- This app look like a complete website with a nav bar and main section. However, the only issue is the footer. I will work on that in near future.
+- Deployment issue
 ## Future Enhancements
 - I will add more feature like issuing(borrowing) book for the user.  
