@@ -40,7 +40,7 @@ export default class SignUpForm extends Component {
             <Form className='bordered-form' autoComplete="off" onSubmit={this.handleSubmit}>
               <Form.Group className="mb-3 form-label" controlId="name">
                 <Form.Label>Name</Form.Label>
-                <Form.Control type="text"  name="name" value={this.state.name} onChange={this.handleChange} required />
+                <Form.Control type="text" name="name" value={this.state.name} onChange={this.handleChange} required />
               </Form.Group>
 
               <Form.Group className="mb-3 form-label" controlId="email">
@@ -55,16 +55,14 @@ export default class SignUpForm extends Component {
 
               <Form.Group className="mb-3 form-label" controlId="confirm">
                 <Form.Label>Confirm</Form.Label>
-                <Form.Control type="password"  name="confirm" value={this.state.confirm} onChange={this.handleChange} required />
+                <Form.Control type="password" name="confirm" value={this.state.confirm} onChange={this.handleChange} required />
               </Form.Group>
-            
-              <p>Don't have an account yet?</p> 
-              <Button variant="secondary" type="submit" disabled={disable}>
+
+              <Button variant="warning" type="submit" disabled={disable}>
                 Sign Up
               </Button>
-             
             </Form>
-            
+
             <p className="error-message">&nbsp;{this.state.error}</p>
           </div>
         </div>

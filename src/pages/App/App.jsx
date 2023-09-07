@@ -1,15 +1,15 @@
 import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { getUser } from '../utilities/users-service';
+import { getUser } from '../../utilities/users-service';
 import './App.css';
-import AuthPage from '../pages/AuthPage/AuthPage';
-import NewOrderPage from '../pages/NewOrderPage/NewOrderPage';
-import OrderHistoryPage from '../pages/OrderHistoryPage/OrderHistoryPage';
-import NavBar from '../components/NavBar/NavBar';
-import BookPage from '../pages/BookPage/BookPage';
-import BookList from '../pages/BookList/BookList';
-import UpdateBookPage from '../pages/UpdateBookPage/UpdateBookPage';
-import UpdateOrderPage from '../pages/UpdateOrderPage/UpdateOrderPage';
+import AuthPage from '../AuthPage/AuthPage';
+import NewOrderPage from '../NewOrderPage/NewOrderPage';
+import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage';
+import NavBar from '../../components/NavBar/NavBar';
+import BookPage from '../BookPage/BookPage';
+import BookList from '../BookList/BookList';
+import UpdateBookPage from '../UpdateBookPage/UpdateBookPage';
+import UpdateOrderPage from '../UpdateOrderPage/UpdateOrderPage';
 
 export default function App() {
   const [user, setUser] = useState(getUser());
