@@ -27,12 +27,15 @@ I built a Book store App that allows users to sell and buy books. This applicati
 ## Getting Started
 - [Trello board](https://private326622.monday.com/boards/5115436468)
 
-![Trello board screensget](/readme-assets/trello.png>)
+![Trello board screensget](/readme-assets/trello.png)
 - Deployed app
+## Hierachy
+![mvc](/readme-assets/appMVC.png)
 ## Unsolved Problems
 ## Future Enhancements
 - Use state to track more detailed forecasts metrics such as precipitation and wind speed
 - Try to auto-detect the user's current location. -->
+ ## Component Hierachy
 
 <!-- ## Component Hierachy
 ![React Component Heirachy](/readme-assets/React%20Component%20Heirachy.png)
