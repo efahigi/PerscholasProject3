@@ -25,7 +25,7 @@ I built a Book store App that allows users to sell and buy books. This applicati
 - Frontend:Bootstrap
 - Backend:Node
 ## Getting Started
-- [Trello board](/readme-assets/https://private326622.monday.com/boards/5115436468)
+- [Trello board](https://private326622.monday.com/boards/5115436468)
 
 ![Trello board screensget](<Screenshot 2023-09-06 124720.png>)
 - Deployed app
