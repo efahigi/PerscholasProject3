@@ -1,4 +1,8 @@
 //---Load express into my  application
+// Always require and configure near the top
+require('dotenv').config();
+// Connect to the database
+require('./config/database');
 const express = require('express');
 const path = require('path');
 const favicon = require('serve-favicon');
@@ -6,10 +10,10 @@ const logger = require('morgan');
 const cors = require('cors');
 const fs = require('fs');
 
-// Always require and configure near the top
-require('dotenv').config();
-// Connect to the database
-require('./config/database');
+// // Always require and configure near the top
+// require('dotenv').config();
+// // Connect to the database
+// require('./config/database');
 
 const app = express();
 
@@ -21,6 +25,7 @@ app.use(logger('dev'));
 app.use(express.json());//app.use(express.json({ extended: false }));
 
 // app.use(express.static(path.join(__dirname, 'build')));
+app.use(favicon(path.join(__dirname, 'build', 'favicon.ico')));
 app.use(express.static(path.join(__dirname, 'build')));
 // Middleware to check and verify a JWT and
 // assign the user object from the JWT to req.user
@@ -40,7 +45,7 @@ app.use('/uploads', express.static('uploads'));
 // Protect the API routes below from anonymous users
 const ensureLoggedIn = require('./config/ensureLoggedIn');
 app.use('/api/books', ensureLoggedIn, require('./routes/api/books'));
-
+app.use('/api/orders', ensureLoggedIn, require('./routes/api/orders'));
 
 // The following "catch all" route (note the *) is necessary
 // to return the index.html on all non-AJAX requests
